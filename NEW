@@ -1,0 +1,110 @@
+for test
+
+
+
+
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
+sudo apt-get update
+
+sudo apt-get install \
+آ آ آ  ca-certificates \
+آ آ آ  curl \
+آ آ آ  gnupg \
+آ آ آ  lsb-release
+
+
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+
+echo \
+آ  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+آ  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+sudo docker run hello-world
+
+ظˆظ‚طھغŒ ظ¾غŒط§ظ… hello world  ط±ظˆ ط¯ط±غŒط§ظپطھ ظ…غŒع©ظ†غŒط¯ ط¨ظ‡ ط³ط±ط§ط؛ ظ†طµط¨ ظ¾ع©غŒط¬ ظ†ظˆط¯ nulink ظ…غŒ ط±غŒط¯ 
+
+sudo apt update && sudo apt upgrade -y
+
+
+apt install python3-pip -y
+
+wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
+
+tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
+
+cd geth-linux-amd64-1.10.23-d901d853/
+
+./geth account new --keystore ./keystore
+
+ط­ظˆط§ط³طھظˆظ† ط¨ط§ط´ظ‡ طھظˆغŒ ع©ط¯ ط¨ط§ظ„ط§ ط§ظˆظ† ظ†ظ‚ط·ظ‡ ط§ظˆظ„ ع©ط¯ ط±ظˆ ظ‡ظ… ط¨ط§غŒط¯  ع©ظ¾غŒ ع©ظ†غŒط¯
+
+ط¯ط± ط§غŒظ† ظ…ط±ط­ظ„ظ‡ غŒع© ظ¾ط³ظˆط±ط¯ ظˆط§ط±ط¯ ظ…غŒع©ظ†غŒط¯ ظˆ ط¯ظˆط¨ط§ط±ظ‡ ط§ظˆظ† ط±ظˆ طھط§غŒغŒط¯ ظ…غŒâ€Œع©ظ†غŒط¯ ع©ظ‡ ط¨ط§غŒط¯ ط¯ط± ظ…ط±ط§ط­ظ„ ط¨ط¹ط¯ ط§ط²ط´ ط§ط³طھظپط§ط¯ظ‡ ع©ظ†غŒط¯
+
+ط¨ط¹ط¯ ط§ط² ظˆط§ط±ط¯ ع©ط±ط¯ظ† ظ¾ط³ظˆط±ط¯ غŒع© ط³ط±غŒ ط§ط·ظ„ط§ط¹ط§طھ ظ…غŒط¯ظ‡ ط¨ظ‡طھظˆظ† ع©ظ‡ ط¨ط§غŒط¯ ط§ظˆظ† ظ‡ط§غŒ طھظˆغŒ غŒظ‡ notepad ط°ط®غŒط±ظ‡ ع©ظ†غŒط¯ ع©ظ‡ ط¨ط§غŒط¯ ط¯ط± ط§ط¯ط§ظ…ظ‡ ط§ط²ط´ ط§ط³طھظپط§ط¯ظ‡ ع©ظ†غŒط¯
+
+ظ‚ط¨ظ„ ط§ط² ظ‡ط± ع©ط§ط±غŒ ط¨ظ‡ ظ¾ط§ط¨ظ„غŒع© ط§ط¯ط±ط³طھظˆظ† ظ…ظ‚ط¯ط§ط±غŒ bnb طھط³طھغŒ ط§ط² غŒع© ع©غŒظپ ظ¾ظˆظ„ ظ…طھط§ظ…ط³ع© ط§ط±ط³ط§ظ„ ع©ظ†غŒط¯ ظˆ ط¨ط¹ط¯ ط§ط¯ط§ظ…ظ‡ ظ…ط³غŒط± ط±ظˆ ط¨ط±غŒط¯
+
+cd $home
+
+docker pull nulink/nulink:latest
+
+cd /root
+mkdir nulink
+
+ط§ع¯ط± ظ¾غŒط§ظ… ط¯ط§ط¯ ع©ظ‡ ط§غŒظ† ظ†ط§ظ… ظˆط¬ظˆط¯ ط¯ط§ط±ظ‡ ط§غŒط±ط§ط¯ ظ†ط¯ط§ط±ط¹ ط¨ظ‡ ظ…ط±ط­ظ„ظ‡ ط¨ط¹ط¯ ط¨ط±غŒط¯
+
+cp xxxxxxxxxxxxxxxxxxxxx /root/nulink
+
+ط¨ظ‡ ط¬ط§غŒ x ظ‡ط§ ط§ط² ط¢ط¯ط±ط³غŒ ع©ظ‡ ط¨ط§ظ„ط§طھط± ط¨ظ‡طھظˆظ† ط¯ط§ط¯ظ‡ ط§ط³طھظپط§ط¯ظ‡ ع©ظ†غŒط¯ طŒ ط¯ظ‚طھ ع©ظ†غŒط¯ ع©ط¯ ظ‡ط§ط±ظˆ ط¯ط±ط³طھ ع©ظ¾غŒ ع©ظ†غŒط¯ ظˆ ظ…ط±ط§ظ‚ط¨ ط¨ط§ط´غŒط¯ ظپط¶ط§ ط¨غŒظ† ع©ط¯ ظ‡ط§ ط¨ظ‡ ظˆط¬ظˆط¯ ظ†غŒط§ط¯طŒ ط´ظ…ط§ ط¨ط§غŒط¯ ع©ط¯غŒ ط´ط¨غŒظ‡ ط¨ظ‡ ط²غŒط± ط±ظˆ ع©ظ‡ ط¯ط§ط¯ظ‡ ظ‡ط§غŒ ط®ظˆط¯طھظˆظ† ط±ظˆ طھظˆط´ ع©ظ¾غŒ ظ…غŒع©ظ†غŒط¯ ظˆط§ط±ط¯ ع©ظ†غŒط¯
+
+cp /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-09-16T16-46-42.233370072Z--e686bf9b57cec541e0f46f2c0a41bc8836b9b270 /root/nulink
+
+
+chmod -R 777 /root/nulink
+
+pip install virtualenv
+
+virtualenv /root/nulink-venv
+
+source /root/nulink-venv/bin/activate
+
+wget https://filetransfer.nulink.org/release/nulink-0.2.0-py3-none-any.whl
+
+pip install nulink-0.2.0-py3-none-any.whl
+
+pip install --upgrade pip
+
+source /root/nulink-venv/bin/activate
+
+python -c "import nulink"
+
+nulink --help
+
+export NULINK_KEYSTORE_PASSWORD=xxxxxxxxxxxx
+
+ط¨ظ‡ ط¬ط§غŒ ط§غŒع©ط³ ظ‡ط§ ط§ظˆظ† ظ¾ط³ظˆط±ط¯ ع©ظ‡ ط¨ط§ظ„ط§طھط± ظˆط§ط±ط¯ ع©ط±ط¯غŒط¯ ظˆ ع¯ظپطھظ… ط¯ط± ط§ط¯ط§ظ…ظ‡ ظ„ط§ط²ظ…ظˆظ† ظ…غŒط´ظ‡ ط±ظˆ ظˆط§ط±ط¯ ع©ظ†غŒط¯
+
+export NULINK_OPERATOR_ETH_PASSWORD=xxxxxxxxxx
+
+ط¯ط± ط§غŒظ†ط¬ط§ ظ‡ظ… ط¨ظ‡ ط¬ط§غŒ ط§غŒع©ط³ ظ‡ط§ ط§ظˆظ† ظ¾ط³ظˆط±ط¯غŒ ع©ظ‡ ط¨ط§ظ„ط§طھط± ط¯ط§ط¯غŒط¯ ط±ظˆ ط¯ظˆط¨ط§ط±ظ‡ ظˆط§ط±ط¯ ع©ظ†غŒط¯
+
+docker run -it --rm \
+-p 9151:9151 \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
+nulink/nulink nulink ursula init \
+--signer keystore:///code/xxxxxxxxxxxxxxxxxxxxxxx \
+--eth-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
+--network horus \
+--payment-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
+--payment-network bsc_testnet \
+--operator-address yyyyyyyyyyyyyyy \
+--max-gas-price 100

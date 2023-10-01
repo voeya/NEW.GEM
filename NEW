@@ -4,19 +4,6 @@ for test
 
 
 
-apt install python3-pip -y
-
-wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
-
-tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
-
-cd geth-linux-amd64-1.10.23-d901d853/
-
-./geth account new --keystore ./keystore
-
-ط­ظˆط§ط³طھظˆظ† ط¨ط§ط
-docker pull nulink/nulink:latest
-
 cd /root
 mkdir nulink
 

@@ -42,3 +42,13 @@ nulink/nulink nulink ursula init \
 --payment-network bsc_testnet \
 --operator-address yyyyyyyyyyyyyyy \
 --max-gas-price 100
+
+virtualenv /root/nulink-venv
+
+source /root/nulink-venv/bin/activate
+
+wget https://filetransfer.nulink.org/release/nulink-0.2.0-py3-none-any.whl
+
+pip install nulink-0.2.0-py3-none-any.whl
+
+pip install --upgrade pip
